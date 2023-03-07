@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ],
+    "windows": {
+        "python": "C:/Users/USERNAME/AppData/Local/Programs/Python/Python36-32/python.exe",
+        "env": {
+            "PYTHONPATH": "C:/Users/Pichau/Desktop/workspace/ntp-cristian-clock"
+        },
+        "args": ["C:/Users/Pichau/Desktop/workspace/ntp-cristian-clock/ntp-server.py",
+                 "C:/Users/Pichau/Desktop/workspace/ntp-cristian-clock/client.py"]
+    }
+}
