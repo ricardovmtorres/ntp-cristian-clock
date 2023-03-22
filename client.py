@@ -47,7 +47,7 @@ def cristian(data_inicio, t2, t3):
     t4 = time.time()
     print(f"[CLIENT-T4] {t4}")
     
-    # Calcula o tempo de viagem médio e ajusta o relógio local
+    # Calcula o tempo de viagem médio 
     tempo_medio = ((t4 - data_inicio) - (t3 - t2)) / 2
     horario = t2 + tempo_medio
     

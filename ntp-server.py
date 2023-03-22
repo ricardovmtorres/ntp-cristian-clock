@@ -27,13 +27,16 @@ def handle_client(conn, addr):
         dt_object = datetime.datetime.fromtimestamp(float(data_client))
         print("Hora e data do cliente:", dt_object.strftime("%m/%d/%Y %H:%M:%S"))
 
-        print(f"[{addr}] {data_client}")
-        data_client = f"Data from client: {data_client}"
+        dt_object = datetime.datetime.fromtimestamp(float(data_chegada))
+        print("Hora e data de chegada:", dt_object.strftime("%m/%d/%Y %H:%M:%S"))
 
         data_saida = time.time()
-        print(data_saida)
+        
         resposta = str(data_chegada)+";"+str(data_saida)
         conn.send(resposta.encode(FORMAT))
+
+        dt_object = datetime.datetime.fromtimestamp(float(data_saida))
+        print("Hora e data de saida:", dt_object.strftime("%m/%d/%Y %H:%M:%S"))
 
     conn.close()
 
