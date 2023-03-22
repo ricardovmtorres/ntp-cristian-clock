@@ -20,7 +20,6 @@ def main():
     while connected:
         #msg = input("> ")
         #msg += ":"+ str(PORT)
-
         data_inicio = time.time()
         print(f"[CLIENT-T1] {data_inicio}")
         
@@ -65,6 +64,8 @@ def atualiza_hora(horas):
     # Cria um objeto datetime com a data atual e o horário definido pelo objeto time
     datetime_obj = datetime.datetime.combine(datetime.date.today(), time_obj)
     print(datetime_obj)
+    delta = datetime.timedelta(hours=3)
+    datetime_obj += delta
 
     # linux
     # Define o comando para mudar a hora do sistema e executa
